@@ -37,7 +37,7 @@ export default function Navigation() {
 			<div className='flex flex-row items-center justify-center gap-4'>
 				<Link
 					className={`text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500 transition-opacity duration-700 ease-in ${
-						pages?.previousPage ? 'opacity-100' : 'opacity-0'
+						pages?.previousPage ? 'opacity-100' : 'opacity-0 pointer-events-none'
 					}`}
 					href={pages?.previousPage}>
 					<svg
@@ -59,9 +59,7 @@ export default function Navigation() {
 				<Link
 					className={`${
 						pages?.match ? 'hidden ' : 'block '
-					}text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500 transition-all duration-500 ${
-						pages?.nextPage && !pages?.match ? 'opacity-100' : 'opacity-0'
-					}`}
+					}text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500`}
 					href={pages?.nextPage}>
 					<svg
 						className='w-5 h-5'
@@ -84,7 +82,9 @@ export default function Navigation() {
 					rel='noopener noreferrer'
 					className={`${
 						pages?.match ? 'block ' : 'hidden '
-					}text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500`}
+					}text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500 transition-opacity duration-700 ease-in ${
+						pages?.match ? 'opacity-100' : 'opacity-0'
+					}`}
 					href='https://calendly.com/jonas-samulionis/30min'>
 					<svg
 						className='w-5 h-5'
