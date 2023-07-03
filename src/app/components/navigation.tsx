@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { event } from 'nextjs-google-analytics';
 
 interface Pages {
 	previousPage: string;
@@ -77,9 +78,15 @@ export default function Navigation() {
 					<span className='sr-only'>Next</span>
 				</Link>
 
-				<a
+				<Link
 					target='_blank'
 					rel='noopener noreferrer'
+					onClick={() =>
+						event('book_meeting', {
+							category: 'Booking',
+							label: 'Book a meeting',
+						})
+					}
 					className={`${
 						pages?.match ? 'block ' : 'hidden '
 					}text-red-700 border border-red-700 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:focus:ring-red-800 dark:hover:bg-red-500 transition-opacity duration-700 ease-in ${
@@ -98,7 +105,7 @@ export default function Navigation() {
 						/>
 					</svg>
 					<span className='sr-only'>Heart - hire me</span>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

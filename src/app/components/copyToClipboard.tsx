@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { event } from 'nextjs-google-analytics';
 
 export default function CopyTextToClipboard({ copyText }: any) {
 	const [isCopied, setIsCopied] = useState(false);
@@ -13,6 +14,10 @@ export default function CopyTextToClipboard({ copyText }: any) {
 
 	// onClick handler function for the copy button
 	function handleCopyClick() {
+		event('copy_email', {
+			category: 'Contact',
+			label: 'Copy email to clipboard',
+		});
 		// Asynchronously call copyTextToClipboard
 		return copyTextToClipboard(copyText)
 			.then(() => {

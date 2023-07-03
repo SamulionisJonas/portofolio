@@ -8,12 +8,16 @@ export default function Superpowers() {
 				What are my
 				<br /> <span className='text-blue-600'>Superpowers?</span>
 			</h2>
-			<p className='my-4 text-lg text-gray-500'>
-				Javascript and Typescript, React, Solid they all have it’s purpose, Web components
-				with Stencil or Lit puts the smile on my face.
+			<p className='my-4 text-lg text-gray-600'>
+				I possess a wide range of skills that empower me to deliver exceptional software
+				solutions. With expertise in JavaScript and TypeScript, I craft robust and
+				performant applications. I specialize in building intuitive user interfaces using
+				React, while ensuring accessibility and usability for all users. Additionally, I
+				have a deep understanding of design systems and their role in creating consistent
+				and delightful user experiences.
 			</p>
 
-			<div className='fixed w-4/6 h-4/6 left-0 right-0 m-auto top-0 bottom-0'>
+			{/* <div className='fixed w-4/6 h-4/6 left-0 right-0 m-auto top-0 bottom-0'>
 				<div className='z-0 w-24 h-24'>
 					<Image
 						className='rounded-full border border-gray-100 shadow-sm'
@@ -95,7 +99,7 @@ export default function Superpowers() {
 						alt='Picture of the author'
 					/>
 				</div>
-			</div>
+			</div> */}
 		</PageLayout>
 	);
 }
