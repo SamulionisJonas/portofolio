@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							</p>
 							<CopyTextToClipboard copyText='jonas.samulionis@outlook.com' />
 						</div>
-						<div className='fixed bottom-6 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none'>
+						<div className='h-36 fixed p-6 bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none'>
 							<a
 								className='ė flex place-items-center gap-2 p-2 lg:pointer-events-auto hover:font-mono hover:font-bold'
 								href='https://www.linkedin.com/in/samulionis/'
