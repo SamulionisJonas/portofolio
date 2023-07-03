@@ -34,7 +34,7 @@ export default function Navigation() {
 	}
 
 	return (
-		<div className='fixed bottom-40 grid text-center lg:text-left'>
+		<div className='fixed bottom-24 md:bottom-72 z-10 grid text-center lg:text-left'>
 			<div className='flex flex-row items-center justify-center gap-4'>
 				<Link
 					className={`text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500 transition-opacity duration-700 ease-in ${

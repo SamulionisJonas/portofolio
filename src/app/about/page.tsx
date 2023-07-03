@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function Superpowers() {
 	return (
 		<PageLayout>
-			<h2 className='text-4xl font-extrabold dark:text-white'>
+			<h2 className='z-10 text-4xl font-extrabold dark:text-white'>
 				What are my
 				<br /> <span className='text-blue-600'>Superpowers?</span>
 			</h2>
-			<p className='my-4 text-lg text-gray-600'>
+			<p className='max-h-60 overflow-scroll lg:max-h-max md:overflow-visible my-4 text-lg text-gray-600'>
 				I possess a wide range of skills that empower me to deliver exceptional software
 				solutions. With expertise in JavaScript and TypeScript, I craft robust and
 				performant applications. I specialize in building intuitive user interfaces using
