@@ -10,11 +10,14 @@ export default function Superpowers() {
 			</h2>
 			<p className='max-h-60 overflow-scroll lg:max-h-max md:overflow-visible my-4 text-lg text-gray-600'>
 				I possess a wide range of skills that empower me to deliver exceptional software
-				solutions. With expertise in JavaScript and TypeScript, I craft robust and
-				performant applications. I specialize in building intuitive user interfaces using
-				React, while ensuring accessibility and usability for all users. Additionally, I
-				have a deep understanding of design systems and their role in creating consistent
-				and delightful user experiences.
+				solutions. With expertise in{' '}
+				<span className='font-extrabold text-amber-500'>JavaScript</span> and
+				<span className='font-extrabold text-blue-500'> TypeScript</span>, I craft robust
+				and performant applications. I specialize in building intuitive user interfaces
+				using <span className='font-extrabold text-sky-500'>React</span>, while ensuring
+				accessibility and usability for all users. Additionally, I have a deep understanding
+				of <span className='font-extrabold text-pink-500'>Design Systems</span> and their
+				role in creating consistent and delightful user experiences.
 			</p>
 
 			{/* <div className='fixed w-4/6 h-4/6 left-0 right-0 m-auto top-0 bottom-0'>
