@@ -27,7 +27,7 @@ export default function Navigation() {
 		const pageConfig: { [key: string]: Pages } = {
 			'/': { previousPage: '', nextPage: '/about', match: false },
 			'/about': { previousPage: '/', nextPage: '/match', match: false },
-			'/match': { previousPage: '/about', nextPage: '/contact', match: true },
+			'/match': { previousPage: '/about', nextPage: '', match: true },
 		};
 
 		setPages(pageConfig[currentPath]);
