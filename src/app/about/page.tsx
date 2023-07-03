@@ -16,8 +16,9 @@ export default function Superpowers() {
 				and performant applications. I specialize in building intuitive user interfaces
 				using <span className='font-extrabold text-sky-500'>React</span>, while ensuring
 				accessibility and usability for all users. Additionally, I have a deep understanding
-				of <span className='font-extrabold text-pink-500'>Design Systems</span> and their
-				role in creating consistent and delightful user experiences.
+				of native web components,
+				<span className='font-extrabold text-pink-500'>Design Systems</span> and their role
+				in creating consistent and delightful user experiences.
 			</p>
 
 			{/* <div className='fixed w-4/6 h-4/6 left-0 right-0 m-auto top-0 bottom-0'>
