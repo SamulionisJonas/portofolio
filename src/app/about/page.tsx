@@ -17,7 +17,7 @@ export default function Superpowers() {
 				using <span className='font-extrabold text-sky-500'>React</span>, while ensuring
 				accessibility and usability for all users. Additionally, I have a deep understanding
 				of native web components,
-				<span className='font-extrabold text-pink-500'>Design Systems</span> and their role
+				<span className='font-extrabold text-pink-500'> Design Systems</span> and their role
 				in creating consistent and delightful user experiences.
 			</p>
 
