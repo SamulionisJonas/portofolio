@@ -21,9 +21,27 @@ module.exports = {
 						opacity: '1',
 					},
 				},
+				cowmove: {
+					'0%': {
+						left: '0',
+					},
+					'30%': {
+						left: '50',
+					},
+					'50%': {
+						left: '50',
+					},
+					'80%': {
+						left: '100',
+					},
+					'100%': {
+						left: '100',
+					},
+				},
 			},
 			animation: {
 				fadeIn: 'fadeIn 1500ms ease-in-out',
+				cowmove: 'cowmove 5s ease-in-out infinite',
 			},
 		},
 	},

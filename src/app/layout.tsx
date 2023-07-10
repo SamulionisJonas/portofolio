@@ -3,13 +3,13 @@ import CopyTextToClipboard from './components/copyToClipboard';
 import Navigation from './components/navigation';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { GoogleAnalytics } from 'nextjs-google-analytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Jonas Samulionis | Software Engineer',
-	description: 'Independent Software Engineer',
+	description:
+		'Looking for a skilled developer? Jonas Samulionis is your go-to expert in JavaScript and TypeScript. With a focus on React, he crafts robust and performant applications with intuitive user interfaces. From native web components to Design Systems, Jonas ensures consistent and delightful user experiences. Trust him to deliver exceptional software solutions.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
